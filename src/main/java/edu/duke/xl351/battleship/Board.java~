@@ -1,0 +1,9 @@
+package edu.duke.xl351.battleship;
+
+public class Board {
+  public int getWidth();
+
+  public int getHeight();
+
+
+}
