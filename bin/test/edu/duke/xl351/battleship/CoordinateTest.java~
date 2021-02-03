@@ -1,0 +1,26 @@
+package edu.duke.xl351.battleship;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+public class CoordinateTest {
+  
+
+  @Test
+  public void test_row_and_col() {
+    Coordinate c1 = new Coordinate(10, 20);
+    assertEquals(10, c1.getRow());
+    assertEquals(20, c1.getCol());
+    
+  }
+//valid or invalid test
+}
+
+
+
+
+
+
+
+

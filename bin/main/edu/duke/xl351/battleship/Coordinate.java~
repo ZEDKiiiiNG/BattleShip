@@ -1,0 +1,27 @@
+package edu.duke.xl351.battleship;
+
+public class Coordinate {
+  private final int row; // the row cordinate
+  
+  public int getRow() {
+    return row;
+  }
+  private final int col; // the row cordinate
+
+  public int getCol() {
+    return col;
+  }
+  public Coordinate(int r, int c){
+    this.row = r;
+    this.col = c;
+  }
+}
+
+
+
+
+
+
+
+
+
