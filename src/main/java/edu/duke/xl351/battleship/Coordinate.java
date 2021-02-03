@@ -39,8 +39,8 @@ public class Coordinate {
     if(descr.length() != 2){ // when the size of descr is not 2
       throw new IllegalArgumentException("the length of size must be 2, but is"+descr.length());
     }
-    int rowLetter = descr.toUpperCase().charAt(0); // the first letter in upper case
-    int colNumber = descr.charAt(1); // the second number
+    char rowLetter = descr.toUpperCase().charAt(0); // the first letter in upper case
+    char colNumber = descr.charAt(1); // the second number
     if (rowLetter < 'A' || rowLetter > 'Z'){
      throw new IllegalArgumentException("the first letter must be A-Z, but is"+rowLetter); 
     }

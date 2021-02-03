@@ -1,0 +1,28 @@
+package edu.duke.xl351.battleship;
+
+public class Placement {
+  private final Coordinate where;
+  private final char orientation;
+  public char getOrientation() {
+    return orientation;
+  }
+  public Coordinate getWhere() {
+    return where;
+  }
+  public Placement(Coordinate w, char o){ // default constructor
+    this.where = w;
+    this.orientation = o;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+

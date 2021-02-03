@@ -1,0 +1,25 @@
+package edu.duke.xl351.battleship;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+
+public class PlacementTest {
+  @Test
+  public void test_where_and_orientation() {
+    Coordinate c1 = new Coordinate(10, 20);
+    Placement p1 = new Placement(c1, 'V')
+    assertEquals(c1, p1.getWhere());
+    assertEquals('V', p1.getOrientation());
+    
+  }
+  }
+
+}
+
+
+
+
+
+
+
