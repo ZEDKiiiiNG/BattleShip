@@ -69,6 +69,35 @@ public class BoardTextViewTest {
 
   }
 
+  @Test
+  public void test_display_add_3by5(){
+    Board<Character> b3 = new BattleShipBoard<Character>(3, 5);
+    BoardTextView view3 = new BoardTextView(b3);
+    String expectedHeader= "  0|1|2\n";
+    assertEquals(expectedHeader, view3.makeHeader());
+    String expected=
+      expectedHeader+
+      "A  | |  A\n"+
+      "B  | |  B\n"+
+      "C  | |  C\n"+
+      "D  | |  D\n"+
+      "E  | |  E\n"+
+      expectedHeader;
+    assertEquals(expected, view3.displayMyOwnBoard());
+    Coordinate c1 = new Coordinate("B0");
+    Ship<Character> s1 = new BasicShip(c1);
+    assertEquals(b3.tryAddShip(s1),true);
+    String expected2=
+      expectedHeader+
+      "A  | |  A\n"+
+      "B s| |  B\n"+
+      "C  | |  C\n"+
+      "D  | |  D\n"+
+      "E  | |  E\n"+
+      expectedHeader;
+    assertEquals(expected2, view3.displayMyOwnBoard());
+  }
+
 
 
 

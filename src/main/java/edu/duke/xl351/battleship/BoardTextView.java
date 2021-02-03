@@ -67,7 +67,16 @@ public class BoardTextView {
     String sep=""; //start with nothing to separate, then switch to | to separate
     for (int i = 0; i < toDisplay.getWidth(); i++) {
       ans.append(sep);
-      ans.append(" ");
+      //ans.append(" ");
+      Coordinate c1 = new Coordinate(a, i);
+      String content;
+      if(toDisplay.whatIsAt(c1)!= null){
+        content = String.valueOf(toDisplay.whatIsAt(c1));
+      }
+      else{
+        content = " ";
+      }
+      ans.append(content);
       sep = "|";
     }
     ans.append(" "+sta+"\n");
