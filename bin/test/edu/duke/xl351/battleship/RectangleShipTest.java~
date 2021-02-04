@@ -1,0 +1,53 @@
+package edu.duke.xl351.battleship;
+
+import static org.junit.jupiter.api.Assertions.*;
+import java.util.HashSet;
+
+
+import org.junit.jupiter.api.Test;
+
+public class RectangleShipTest {
+  @Test
+  public void test_makeCoords() {
+    Coordinate c1 = new Coordinate(1,2);
+    Coordinate c2 = new Coordinate(2,2);
+    Coordinate c3 = new Coordinate(1,3);
+    Coordinate c4 = new Coordinate(2,3);
+    //Coordinate c5 = new Coordinate(2,4);
+    
+    HashSet<Coordinate> h1 = RectangleShip.makeCoords(c1, 2,2);
+    HashSet<Coordinate> h2  = new HashSet<Coordinate>();
+    h2.add(c1);
+    h2.add(c2);
+    h2.add(c3);
+    h2.add(c4);
+    assertEquals(h1,h2);
+    
+  }
+
+  @Test
+  public void test_occupy(){
+    Coordinate c1 = new Coordinate(1,2);
+    Coordinate c2 = new Coordinate(2,2);
+    Coordinate c3 = new Coordinate(1,3);
+    Coordinate c4 = new Coordinate(2,3);
+    Coordinate c5 = new Coordinate(2,4);
+    BasicShip s1 = new RectangleShip(c1, 2, 2);
+
+    assertEquals(s1.occupiesCoordinates(c1),true);
+    //assertEquals(s1.occupiesCoordinates(c2),true);
+    //assertEquals(s1.occupiesCoordinates(c3),true);
+    //assertEquals(s1.occupiesCoordinates(c4),true);
+    //assertEquals(s1.occupiesCoordinates(c5),false);
+  }
+}
+
+
+
+
+
+
+
+
+
+

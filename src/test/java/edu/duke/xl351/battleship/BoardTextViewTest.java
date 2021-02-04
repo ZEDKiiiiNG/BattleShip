@@ -85,7 +85,7 @@ public class BoardTextViewTest {
       expectedHeader;
     assertEquals(expected, view3.displayMyOwnBoard());
     Coordinate c1 = new Coordinate("B0");
-    Ship<Character> s1 = new BasicShip(c1);
+    Ship<Character> s1 = new RectangleShip<Character>(c1, 's', '*');;
     assertEquals(b3.tryAddShip(s1),true);
     String expected2=
       expectedHeader+

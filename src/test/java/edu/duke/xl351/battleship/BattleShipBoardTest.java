@@ -37,7 +37,7 @@ public class BattleShipBoardTest {
     Coordinate c1 = new Coordinate("B0");
     Coordinate c2 = new Coordinate("C0");
     Coordinate c3 = new Coordinate("B3");
-    Ship<Character> s1 = new BasicShip(c1);
+    Ship<Character> s1 = new RectangleShip<Character>(c1, 's', '*');;
     assertEquals(b1.tryAddShip(s1),true);
     expect[0][1] = 's';
     checkWhatIsAtBoard(b1,expect); // check only the C1 is 's'
