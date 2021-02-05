@@ -14,7 +14,8 @@ public class App {
   final BoardTextView view;
   final BufferedReader inputReader;
   final PrintStream out;
-  
+
+  final AbstractShipFactory<Character> shipFactory;
   /**
    * Constructs a app with the borad, input source reader and ouput printstream
    * @param theBoard is the {@link Board}.
@@ -27,6 +28,7 @@ public class App {
     this.view = new BoardTextView(theBoard);
     this.inputReader = new BufferedReader(inputSource);
     this.out = out;
+    this.shipFactory = new V1ShipFactory();
   }
 
 
@@ -41,7 +43,8 @@ public class App {
     
     Placement p = readPlacement("Where would you like to put your ship?");
     //Ship<Character> s = new BasicShip(p.getWhere());
-    Ship<Character> s = new RectangleShip<Character>(p.getWhere(), 's', '*');
+    //Ship<Character> s = new RectangleShip<Character>(p.getWhere(), 's', '*');
+    Ship<Character> s  = shipFactory.makeDestroyer(p);
     theBoard.tryAddShip(s);
     out.println(view.displayMyOwnBoard());
   }

@@ -9,6 +9,8 @@ public class RectangleShip<T> extends BasicShip<T>{
    * @return the hash set contain all ship body coordinate
    */
   //private HashSet<Coordinate> myPecies;
+  final String name;
+  
   static HashSet<Coordinate> makeCoords(Coordinate upperLeft, int width, int height){
     HashSet<Coordinate> h1 = new HashSet<Coordinate>();
     for(int i = upperLeft.getRow(); i <upperLeft.getRow()+ height; i++ ){
@@ -20,19 +22,26 @@ public class RectangleShip<T> extends BasicShip<T>{
     return h1;
   }
 
-  // pass the needed field to the super which is basic ship
-  public RectangleShip(Coordinate upperLeft, int width, int height,ShipDisplayInfo<T> myDisplayInfo) {
-    super(makeCoords(upperLeft, width, height), myDisplayInfo);
+  public String getName(){
+    return name;
   }
 
-  public RectangleShip(Coordinate upperLeft, int width, int height, T data, T onHit) {
-    this(upperLeft, width, height, new SimpleShipDisplayInfo<T>(data, onHit));
+  // pass the needed field to the super which is basic ship
+  public RectangleShip(String name, Coordinate upperLeft, int width, int height, ShipDisplayInfo<T> myDisplayInfo) {
+    super(makeCoords(upperLeft, width, height), myDisplayInfo);
+    this.name = name;
   }
+
+  public RectangleShip(String name, Coordinate upperLeft, int width, int height, T data, T onHit) {
+    this(name, upperLeft, width, height, new SimpleShipDisplayInfo<T>(data, onHit));
+  }
+
 
   public RectangleShip(Coordinate upperLeft, T data, T onHit) {
-    this(upperLeft, 1, 1, data, onHit);
+    this("testship", upperLeft, 1, 1, data, onHit);
   }
 
+  
 
 }
 

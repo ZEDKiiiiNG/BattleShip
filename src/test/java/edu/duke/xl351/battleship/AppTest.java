@@ -40,7 +40,7 @@ public class AppTest {
   }
   @Test
    public void test_doOne_placement() throws IOException{
-    StringReader sr = new StringReader("B0V\nC1H\nd2v\n");
+    StringReader sr = new StringReader("B0V\nC1v\nb2v\n");
     ByteArrayOutputStream bytes = new ByteArrayOutputStream();
     PrintStream ps = new PrintStream(bytes, true);
     Board<Character> b = new BattleShipBoard<Character>(3,5);
@@ -52,9 +52,9 @@ public class AppTest {
       "Where would you like to put your ship?\n"+
       expectedHeader+
       "A  | |  A\n"+
-      "B s| |  B\n"+
-      "C  | |  C\n"+
-      "D  | |  D\n"+
+      "B d| |  B\n"+
+      "C d| |  C\n"+
+      "D d| |  D\n"+
       "E  | |  E\n"+
       expectedHeader+"\n";
     assertEquals(expected1, bytes.toString());
@@ -64,10 +64,10 @@ public class AppTest {
       "Where would you like to put your ship?\n"+
       expectedHeader+
       "A  | |  A\n"+
-      "B s| |  B\n"+
-      "C  |s|  C\n"+
-      "D  | |  D\n"+
-      "E  | |  E\n"+
+      "B d| |  B\n"+
+      "C d|d|  C\n"+
+      "D d|d|  D\n"+
+      "E  |d|  E\n"+
       expectedHeader+"\n";
     assertEquals(expected2, bytes.toString());
     bytes.reset(); //clear out bytes for next time around
@@ -76,10 +76,10 @@ public class AppTest {
       "Where would you like to put your ship?\n"+
       expectedHeader+
       "A  | |  A\n"+
-      "B s| |  B\n"+
-      "C  |s|  C\n"+
-      "D  | |s D\n"+
-      "E  | |  E\n"+
+      "B d| |d B\n"+
+      "C d|d|d C\n"+
+      "D d|d|d D\n"+
+      "E  |d|  E\n"+
       expectedHeader+"\n";
     assertEquals(expected3, bytes.toString());
     bytes.reset(); //clear out bytes for next time around
