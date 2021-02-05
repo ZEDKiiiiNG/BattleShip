@@ -41,7 +41,36 @@ public class RectangleShipTest {
     assertEquals(s1.occupiesCoordinates(c4),true);
     assertEquals(s1.occupiesCoordinates(c5),false);
   }
+
+  @Test
+  public void test_hit_record(){
+    Coordinate c1 = new Coordinate(1,2);
+    Coordinate c2 = new Coordinate(2,2);
+    Coordinate c3 = new Coordinate(1,3);
+    Coordinate c4 = new Coordinate(2,3);
+    Coordinate c5 = new Coordinate(2,4);
+    RectangleShip<Character> s1 = new RectangleShip<Character>(c1, 2, 2,'s', '*');
+    s1.recordHitAt(c1);
+    
+    assertEquals(s1.getDisplayInfoAt(c1),'*');
+    assertEquals(s1.getDisplayInfoAt(c2),'s');
+    
+    assertEquals(s1.wasHitAt(c1),true);
+    assertEquals(s1.wasHitAt(c2),false);
+    assertThrows(IllegalArgumentException.class, () -> s1.recordHitAt(c5));
+    assertThrows(IllegalArgumentException.class, () -> s1.wasHitAt(c5));
+    assertEquals(s1.isSunk(),false);
+    s1.recordHitAt(c2);
+    s1.recordHitAt(c3);
+    s1.recordHitAt(c4);
+    assertEquals(s1.isSunk(),true);
+    
+    
+    
+  }
 }
+
+
 
 
 
