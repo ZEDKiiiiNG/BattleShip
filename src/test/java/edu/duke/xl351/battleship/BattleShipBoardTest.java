@@ -46,7 +46,23 @@ public class BattleShipBoardTest {
     assertThrows(IllegalArgumentException.class, () -> b1.whatIsAt(c3));
    
   }
+  @Test
+  public void test_add_ship_withchecker(){
+    Board<Character> b = new BattleShipBoard<Character>(4, 4);
+    AbstractShipFactory<Character> f = new V1ShipFactory();
+    Placement v1_2 = new Placement(new Coordinate(0, 0), 'V');
+    Placement v1_3 = new Placement(new Coordinate(1, 2), 'H');
+    Placement v1_4 = new Placement(new Coordinate(2, 0), 'V');
+    
+    Ship<Character> dst1 = f.makeDestroyer(v1_2);
+    Ship<Character> dst2 = f.makeDestroyer(v1_3);
+    Ship<Character> dst3 = f.makeDestroyer(v1_4);
 
+    assertEquals(b.tryAddShip(dst1), true);
+    assertEquals(b.tryAddShip(dst2), false);
+    assertEquals(b.tryAddShip(dst3), false);
+    
+  }
 
 
 }
