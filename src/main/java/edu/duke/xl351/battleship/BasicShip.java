@@ -30,7 +30,6 @@ public abstract class BasicShip<T> implements Ship<T> {
   
 	@Override
 	public boolean occupiesCoordinates(Coordinate where) {
-		// TODO Auto-generated method stub
     boolean res;
     if(myPieces.get(where) != null){
       res = true;
@@ -42,9 +41,7 @@ public abstract class BasicShip<T> implements Ship<T> {
 	}
 
 	@Override
-	public boolean isSunk() {
-		// TODO Auto-generated method stub
-    
+	public boolean isSunk() {    
     for (Coordinate key : myPieces.keySet()) {
       if (myPieces.get(key) == false){
         return false;
@@ -55,21 +52,18 @@ public abstract class BasicShip<T> implements Ship<T> {
 
 	@Override
 	public void recordHitAt(Coordinate where) {
-		// TODO Auto-generated method stub
     checkCoordinateInThisShip(where);
     myPieces.put(where, true);
 	}
 
 	@Override
 	public boolean wasHitAt(Coordinate where) {
-		// TODO Auto-generated method stub
     checkCoordinateInThisShip(where);
 		return myPieces.get(where);
 	}
 
   @Override
   public T getDisplayInfoAt(Coordinate where) {
-    //TODO this is not right.  We need to
     //look up the hit status of this coordinate
     checkCoordinateInThisShip(where);
     return myDisplayInfo.getInfo(where, wasHitAt(where));
