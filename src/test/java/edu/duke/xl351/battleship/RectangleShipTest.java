@@ -1,8 +1,10 @@
 package edu.duke.xl351.battleship;
 
-import static org.junit.jupiter.api.Assertions.*;
-import java.util.HashSet;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
+import java.util.HashSet;
+import java.util.Set;
 
 import org.junit.jupiter.api.Test;
 
@@ -67,7 +69,17 @@ public class RectangleShipTest {
     s1.recordHitAt(c4);
     assertEquals(s1.isSunk(),true);
     
+  }
+
+  @Test
+  public void test_check_rule(){
+    Coordinate c1 = new Coordinate(1,2);
+    RectangleShip<Character> s1 = new RectangleShip<Character>("testship",c1, 2, 2,'s', '*');
     
+    Iterable<Coordinate> set1 =  s1.getCoordinates();
+    for(Coordinate c : set1){
+      assertEquals(s1.wasHitAt(c), false);
+    }
     
   }
 }
