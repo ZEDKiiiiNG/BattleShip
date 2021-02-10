@@ -50,7 +50,9 @@ public class TextPlayer {
     shipCreationFns.put("Carrier", (p) -> shipFactory.makeCarrier(p));
     shipCreationFns.put("Destroyer", (p) -> shipFactory.makeDestroyer(p));
   }
-  
+  /**setup function for ship an ArrayList of the ship names that we want to work from.  
+   *Then we want a map from ship name to the lambda to create it.
+   */  
   protected void setupShipCreationList(){
     shipsToPlace.addAll(Collections.nCopies(2, "Submarine"));
     shipsToPlace.addAll(Collections.nCopies(3, "Destroyer"));
@@ -58,30 +60,57 @@ public class TextPlayer {
     shipsToPlace.addAll(Collections.nCopies(2, "Carrier"));
   }
   
-  
+  /**readplacement function for ship an ArrayList of the ship names that we want to work from.  
+   *Then we want a map from ship name to the lambda to create it.
+   */  
   public Placement readPlacement(String prompt) throws IOException {
     out.println(prompt);
     String s = inputReader.readLine();
+    /*if(s == null){
+       throw new IllegalArgumentException("That placement is invalid:the input is empty");
+       // we will never need to throw a null, as we need a '\n' to input, so it is not concerned
+       }*/
     return new Placement(s);
   }
   
-  
+  /** This function is to iterate the input line make sure all the input is valid .
+   *  if is not valid, the corresoponding String will print to show the first excpetion it break 
+   * @param valid is a maker to show which the input is valid or not
+   * @param shipName represents the name of {@link Ship}
+   * @param createFn represents the correspoding ship function
+   */  
   public void doOnePlacement(String shipName, Function<Placement, Ship<Character>> createFn) throws IOException {
+    boolean valid = false;
+    while(!valid){
+      try{
+        Placement p = readPlacement("Player " + name + " where do you want to place a " + shipName + "?");
+        Ship<Character> s = createFn.apply(p);
+        if(theBoard.tryAddShip(s) != null){
+          throw new IllegalArgumentException(theBoard.tryAddShip(s));
+        }
+        valid = true;
+      }
+      catch(IllegalArgumentException e){
+        out.println(e.getMessage());
+      }
+      }
+    /*
     Placement p = readPlacement("Player " + name + " where do you want to place a " + shipName + "?");
     Ship<Character> s = createFn.apply(p);
     theBoard.tryAddShip(s);
+    */    
     out.print(view.displayMyOwnBoard());
     out.print("\n");
-  }
-
-
-  
-  /**  display the starting (empty) board
-   *   print the instructions message (from the README,
-   *   but also shown again near the top of this file)
-   *   call doOnePlacement to place one ship
-  
-   */
+    }
+    
+    
+    
+    /**  display the starting (empty) board
+    *   print the instructions message (from the README,
+    *   but also shown again near the top of this file)
+    *   call doOnePlacement to place one ship
+    
+    */
   public void doPlacementPhase() throws IOException{
     out.println(view.displayMyOwnBoard());
     out.println("Player "+name+": you are going to place the following ships (which are all\nrectangular). For each ship, type the coordinate of the upper left\n"+"side of the ship, followed by either H (for horizontal) or V (for\n"+"vertical).  For example M4H would place a ship horizontally starting\n"+"at M4 and going to the right.  You have\n"+"\n"+"2 \"Submarines\" ships that are 1x2 \n"+"3 \"Destroyers\" that are 1x3\n"+"3 \"Battleships\" that are 1x4\n"+"2 \"Carriers\" that are 1x6\n");

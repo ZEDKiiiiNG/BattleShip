@@ -18,9 +18,9 @@ public class NoCollisionRuleCheckerTest {
     Ship<Character> dst2 = f.makeDestroyer(v1_3);
 
     
-    assertEquals(true, Ncc.checkPlacement(dst1, b));
+    assertEquals(null, Ncc.checkPlacement(dst1, b));
     b.tryAddShip(dst1);
-    assertEquals(false, Ncc.checkPlacement(dst2, b));
+    assertEquals("That placement is invalid: the ship overlaps another ship.", Ncc.checkPlacement(dst2, b));
   }
 
    @Test
@@ -40,12 +40,20 @@ public class NoCollisionRuleCheckerTest {
     Ship<Character> dst3 = f.makeDestroyer(v1_4);
 
     
-    assertEquals(true, Ibc.checkPlacement(dst1, b));
+    assertEquals(null, Ibc.checkPlacement(dst1, b));
     b.tryAddShip(dst1);
-    assertEquals(false, Ibc.checkPlacement(dst2, b));
+    assertEquals("That placement is invalid: the ship overlaps another ship.", Ibc.checkPlacement(dst2, b));
 
-    assertEquals(Ibc.checkPlacement(dst3, b), false);
+    //assertEquals(Ibc.checkPlacement(dst3, b), "That placement is invalid: the ship overlaps another ship.");
   }
 
 }
+
+
+
+
+
+
+
+
 

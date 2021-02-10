@@ -53,13 +53,13 @@ public class BattleShipBoard<T> implements Board<T>{
    *  the return results shows whether the ship is added or not
    */
   
-  public boolean tryAddShip(Ship<T> toAdd){
-    if (placementChecker.checkPlacement(toAdd,this)) {
+  public String tryAddShip(Ship<T> toAdd){
+    if (placementChecker.checkPlacement(toAdd,this) == null) {
       myShips.add(toAdd);
-      return true;
+      return null;
     }
     else{
-      return false;
+      return placementChecker.checkPlacement(toAdd,this);
     }
   }
   public T whatIsAt(Coordinate where) {

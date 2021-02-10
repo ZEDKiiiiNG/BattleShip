@@ -38,7 +38,7 @@ public class BattleShipBoardTest {
     Coordinate c2 = new Coordinate("C0");
     Coordinate c3 = new Coordinate("B3");
     Ship<Character> s1 = new RectangleShip<Character>(c1, 's', '*');;
-    assertEquals(b1.tryAddShip(s1),true);
+    assertEquals(b1.tryAddShip(s1),null);
     expect[0][1] = 's';
     checkWhatIsAtBoard(b1,expect); // check only the C1 is 's'
     //check the out of bounds
@@ -58,9 +58,9 @@ public class BattleShipBoardTest {
     Ship<Character> dst2 = f.makeDestroyer(v1_3);
     Ship<Character> dst3 = f.makeDestroyer(v1_4);
 
-    assertEquals(b.tryAddShip(dst1), true);
-    assertEquals(b.tryAddShip(dst2), false);
-    assertEquals(b.tryAddShip(dst3), false);
+    assertEquals(b.tryAddShip(dst1), null);
+    assertEquals(b.tryAddShip(dst2), "That placement is invalid: the ship goes off the right of the board.");
+    assertEquals(b.tryAddShip(dst3), "That placement is invalid: the ship goes off the bottom of the board.");
     
   }
 

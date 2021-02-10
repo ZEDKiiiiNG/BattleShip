@@ -39,14 +39,14 @@ public class Placement {
   // the constructor with input of String
   public Placement(String descr){
     if(descr.length() != 3){
-      throw new IllegalArgumentException("the length of size must be 3, but is"+descr.length());
+      throw new IllegalArgumentException("the length of size must be 3, but is "+descr.length());
     }
     // the input for coordinate
     String w = descr.substring(0,2);
     where = new Coordinate(w);
     char ori = descr.toUpperCase().charAt(2);
     if (ori != 'V' && ori != 'H'){
-      throw new IllegalArgumentException("the orientation must be V or H, but is"+ori);
+      throw new IllegalArgumentException("the orientation must be V or H, but is "+ori);
     }
     orientation = ori;
     

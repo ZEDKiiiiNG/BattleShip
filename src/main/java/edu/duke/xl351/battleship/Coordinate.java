@@ -37,16 +37,16 @@ public class Coordinate {
 
   public Coordinate(String descr) {
     if(descr.length() != 2){ // when the size of descr is not 2
-      throw new IllegalArgumentException("the length of size must be 2, but is"+descr.length());
+      throw new IllegalArgumentException("the length of size must be 2, but is "+descr.length());
     }
     char rowLetter = descr.toUpperCase().charAt(0); // the first letter in upper case
     char colNumber = descr.charAt(1); // the second number
     if (rowLetter < 'A' || rowLetter > 'Z'){
-     throw new IllegalArgumentException("the first letter must be A-Z, but is"+rowLetter); 
+     throw new IllegalArgumentException("the first letter must be A-Z, but is "+rowLetter); 
     }
     row = rowLetter - 'A';
     if (colNumber < '0' || colNumber > '9'){
-      throw new IllegalArgumentException("the second number  must be 0-9, but is"+colNumber);
+      throw new IllegalArgumentException("the second number  must be 0-9, but is "+colNumber);
     }
     column = colNumber - '0';
   }

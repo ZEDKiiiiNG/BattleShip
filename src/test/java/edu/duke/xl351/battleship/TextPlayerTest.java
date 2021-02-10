@@ -104,6 +104,54 @@ public class TextPlayerTest {
   }
 
   @Test
+   public void test_doOne_placement_throw_illegelplace() throws IOException{
+    
+    String expectedHeader= "  0|1|2\n";
+    ByteArrayOutputStream bytes = new ByteArrayOutputStream();
+    TextPlayer player = createTextPlayer(3, 5, "Z2V\n8ZH\naav\nA0Q\n\nB0V\n", bytes);
+
+    String sn1 = "Destroyer";
+    Function<Placement, Ship<Character>> createFn1 = player.shipCreationFns.get(sn1);
+    player.doOnePlacement(sn1,createFn1);
+    
+    String expected1 = "Player A where do you want to place a Destroyer?\n"+"That placement is invalid: the ship goes off the bottom of the board.\n";
+    
+    String expected2 = "Player A where do you want to place a Destroyer?\n"+"the first letter must be A-Z, but is 8\n";
+    
+    String expected3 = "Player A where do you want to place a Destroyer?\n"+"the second number  must be 0-9, but is a\n";
+
+    
+    String expected4 = "Player A where do you want to place a Destroyer?\n"+"the orientation must be V or H, but is Q\n";
+    
+    String expected5 = "Player A where do you want to place a Destroyer?\n"+"the length of size must be 3, but is 0\n";
+
+    String expected = expected1+expected2+expected3+expected4+expected5+"Player A where do you want to place a Destroyer?\n"+
+      expectedHeader+
+      "A  | |  A\n"+
+      "B d| |  B\n"+
+      "C d| |  C\n"+
+      "D d| |  D\n"+
+      "E  | |  E\n"+
+      expectedHeader+"\n";
+    assertEquals(expected, bytes.toString());
+    bytes.reset();
+  }
+
+  /*
+  @Test
+   public void test_doOne_placement_throw_nullinput() throws IOException{
+    
+    String expectedHeader= "  0|1|2\n";
+    ByteArrayOutputStream bytes = new ByteArrayOutputStream();
+    TextPlayer player = createTextPlayer(3, 5, "", bytes);
+
+    String sn1 = "Destroyer";
+    Function<Placement, Ship<Character>> createFn1 = player.shipCreationFns.get(sn1);
+    player.doOnePlacement(sn1,createFn1);
+  }
+  */
+  
+  @Test
    public void test_doPlacementPhase() throws IOException{
 
     String expectedHeader= "  0|1|2\n";

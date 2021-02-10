@@ -86,7 +86,7 @@ public class BoardTextViewTest {
     assertEquals(expected, view3.displayMyOwnBoard());
     Coordinate c1 = new Coordinate("B0");
     Ship<Character> s1 = new RectangleShip<Character>(c1, 's', '*');;
-    assertEquals(b3.tryAddShip(s1),true);
+    assertEquals(b3.tryAddShip(s1),null);
     String expected2=
       expectedHeader+
       "A  | |  A\n"+
