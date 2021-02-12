@@ -1,5 +1,6 @@
 package edu.duke.xl351.battleship;
 
+import java.util.Collections;
 import java.util.function.Function;
 
 /**
@@ -56,6 +57,29 @@ public class BoardTextView {
   public String displayEnemyBoard() {
     return displayAnyBoard((c)->toDisplay.whatIsAtForEnemy(c));
   }
+
+
+  /** this function is to display both borads in the same line 
+   * @param enemyView is the enemyBoardTextview
+   * @param myHeader is the start of header of self board
+   * @param enemyheader is the start of the other player's board
+   * @return this function will return the String of playboard with both board display
+   */  
+
+   public String displayMyBoardWithEnemyNextToIt(BoardTextView enemyView, String myHeader, String enemyHeader) {
+     String[] str_self = displayMyOwnBoard().split("\n", -1);
+     String[] str_enemy = enemyView.displayEnemyBoard().split("\n", -1);
+     StringBuilder ans = new StringBuilder(String.join("",Collections.nCopies(5," "))+
+                                           myHeader+String.join("",Collections.nCopies(2*toDisplay.getWidth()+7," "))
+                                          +enemyHeader+"\n");
+     ans.append(str_self[0] + String.join("",Collections.nCopies(8," "))+ str_enemy[0]+"\n");
+     for(int i = 1; i < toDisplay.getHeight()+1; i++){
+       ans.append(str_self[i] + String.join("",Collections.nCopies(6," "))+ str_enemy[i]+"\n");
+     }
+     ans.append(str_self[toDisplay.getHeight() + 1] + String.join("",Collections.nCopies(8, " ")) + str_enemy[toDisplay.getHeight() + 1]
+         + "\n");
+     return ans.toString();
+   }
   
   /**
    * This makes the header line, e.g. 0|1|2|3|4\n

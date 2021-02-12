@@ -135,8 +135,40 @@ public class BoardTextViewTest {
     
   }
 
+  @Test
+  public void test_display_both(){
+    Board<Character> b4 = new BattleShipBoard<Character>(3, 5,'X');
+    BoardTextView view4 = new BoardTextView(b4);
+
+    AbstractShipFactory<Character> f = new V1ShipFactory();
+    Placement v1_2 = new Placement(new Coordinate(0, 0), 'V');
+    
+    Ship<Character> dst1 = f.makeDestroyer(v1_2);
+    
+    assertEquals(b4.tryAddShip(dst1), null);
+    assertSame(b4.fireAt(new Coordinate(0, 1)), null);
+    assertSame(b4.fireAt(new Coordinate(0, 0)), dst1);
+    
+    String expectedHeader= "  0|1|2";
+    String my_header = "Your ocean";
+    String enemy_header = "Player B's ocean";
+    String expected_both=
+      "     Your ocean"+"             "+"Player B's ocean\n"+
+      expectedHeader+"        "+expectedHeader+"\n"+
+      "A *| |  A"+"      "+"A d|X|  A\n"+
+      "B d| |  B"+"      "+"B  | |  B\n"+
+      "C d| |  C"+"      "+"C  | |  C\n"+
+      "D  | |  D"+"      "+"D  | |  D\n"+
+      "E  | |  E"+"      "+"E  | |  E\n"+
+      expectedHeader+"        "+expectedHeader+"\n";
+    assertEquals(expected_both, view4.displayMyBoardWithEnemyNextToIt(view4,my_header,enemy_header));
+  }
+  
+
 
 }
+
+
 
 
 
