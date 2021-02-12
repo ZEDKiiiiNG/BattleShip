@@ -95,6 +95,34 @@ public class BattleShipBoardTest {
     
   }
 
+  @Test
+  public void test_check_win(){
+    Board<Character> b = new BattleShipBoard<Character>(4, 4,'X');
+    AbstractShipFactory<Character> f = new V1ShipFactory();
+    Placement v1_2 = new Placement(new Coordinate(0, 0), 'V');
+    
+    Ship<Character> dst1 = f.makeDestroyer(v1_2);
+    
+    assertEquals(b.tryAddShip(dst1), null);
+
+    assertSame(b.fireAt(new Coordinate(0, 0)), dst1);
+
+    assertFalse(dst1.isSunk());
+
+    assertSame(b.fireAt(new Coordinate(1, 0)), dst1);
+
+    assertFalse(dst1.isSunk());
+
+    assertFalse(b.check_win());
+
+    assertSame(b.fireAt(new Coordinate(2, 0)), dst1);
+
+    assertTrue(dst1.isSunk());
+
+    assertTrue(b.check_win());
+    
+  }
+
 
 }
 

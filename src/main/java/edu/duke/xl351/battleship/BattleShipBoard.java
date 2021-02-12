@@ -111,6 +111,18 @@ public class BattleShipBoard<T> implements Board<T>{
       enemyMisses.add(c);
       return null;
   }
+
+  /** function to check win or loose condition 
+   */
+  public boolean check_win(){
+    for (Ship<T> s: myShips) {
+      if(s.isSunk() == false){
+        return false;
+      }
+    }
+      return true;
+  }
+  
 }
 
 
