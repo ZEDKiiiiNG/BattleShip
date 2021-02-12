@@ -56,8 +56,11 @@ public class RectangleShipTest {
 
     assertEquals(s1.getName(),"testship");
     
-    assertEquals(s1.getDisplayInfoAt(c1),'*');
-    assertEquals(s1.getDisplayInfoAt(c2),'s');
+    assertEquals(s1.getDisplayInfoAt(c1,true),'*');
+    assertEquals(s1.getDisplayInfoAt(c2,true),'s');
+
+    assertEquals(s1.getDisplayInfoAt(c1,false),'s');
+    assertEquals(s1.getDisplayInfoAt(c2,false),null);
     
     assertEquals(s1.wasHitAt(c1),true);
     assertEquals(s1.wasHitAt(c2),false);

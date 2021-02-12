@@ -1,6 +1,7 @@
 package edu.duke.xl351.battleship;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 
 /**
    * Constructs a BattleShipBoard which implements the interface board
@@ -13,15 +14,21 @@ import java.util.ArrayList;
 //public class BattleShipBoard implements Board{
 public class BattleShipBoard<T> implements Board<T>{
   private final int width;
+  private final int height;
+
+  final T missInfo;
 
   private final PlacementRuleChecker<T> placementChecker;
   final ArrayList<Ship<T>> myShips;
+
+  
+  final HashSet<Coordinate> enemyMisses;
+
   
   public int getWidth() {
     return width;
   }
   
-  private final int height;
   
   public int getHeight() {
     return height;
@@ -29,13 +36,13 @@ public class BattleShipBoard<T> implements Board<T>{
 
   /* default consturctor
    */
-  public BattleShipBoard(int w, int h) {
-    this(w, h, new InBoundsRuleChecker<T>(new NoCollisionRuleChecker<>(null)));
+  public BattleShipBoard(int w, int h, T missInfo) {
+    this(w, h, new InBoundsRuleChecker<T>(new NoCollisionRuleChecker<>(null)), missInfo);
   }
 
   /*construtor to have InBoundsRuleChecker
    */
-  public BattleShipBoard(int w, int h, PlacementRuleChecker<T> pc) {
+  public BattleShipBoard(int w, int h, PlacementRuleChecker<T> pc, T missInfo) {
     if (w <= 0) {
       throw new IllegalArgumentException("BattleShipBoard's width must be positive but is " + w);
     }
@@ -46,11 +53,14 @@ public class BattleShipBoard<T> implements Board<T>{
     this.height = h;
     this.myShips = new ArrayList<Ship<T>>();
     this.placementChecker = pc;
+    this.enemyMisses = new HashSet<Coordinate>();
+    this.missInfo = missInfo;
   }
 
   /** this function will add ship to the board based on the checkrule
    *  @param toAdd is the added {@link Ship}
    *  the return results shows whether the ship is added or not
+
    */
   
   public String tryAddShip(Ship<T> toAdd){
@@ -62,8 +72,18 @@ public class BattleShipBoard<T> implements Board<T>{
       return placementChecker.checkPlacement(toAdd,this);
     }
   }
-  public T whatIsAt(Coordinate where) {
-    //if where out of bounds, fall as quickly as they can
+  
+  public T whatIsAtForSelf(Coordinate where) {
+   return whatIsAt(where, true);
+  }
+
+  public T whatIsAtForEnemy(Coordinate where) {
+    return whatIsAt(where, false);
+  }
+
+
+  protected T whatIsAt(Coordinate where, boolean isSelf){
+     //if where out of bounds, fall as quickly as they can
     if (where.getRow()+1 >  height) {
       throw new IllegalArgumentException("The coordinate row should be less than" + (height-1)+"but is "+where.getRow());
     }
@@ -72,13 +92,25 @@ public class BattleShipBoard<T> implements Board<T>{
     }
     for (Ship<T> s: myShips) {
       if (s.occupiesCoordinates(where)){
-        return s.getDisplayInfoAt(where);
+        return s.getDisplayInfoAt(where, isSelf);
       }
+    }
+    if(enemyMisses.contains(where) && !isSelf){
+      return missInfo;
     }
     return null;
   }
 
-
+  public Ship<T> fireAt(Coordinate c){
+    for (Ship<T> s: myShips) {
+      if(s.occupiesCoordinates(c)){
+        s.recordHitAt(c);
+        return s;
+      }
+    }
+      enemyMisses.add(c);
+      return null;
+  }
 }
 
 

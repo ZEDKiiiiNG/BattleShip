@@ -8,7 +8,7 @@ public class InBoundsRuleCheckerTest {
   @Test
   public void test_Inbound_checker() {
     PlacementRuleChecker<Character> Ibc = new InBoundsRuleChecker<>(null);
-    Board<Character> b = new BattleShipBoard<>(4,4, Ibc);
+    Board<Character> b = new BattleShipBoard<>(4,4, Ibc,'X');
 
     AbstractShipFactory<Character> f = new V1ShipFactory();
     Placement v1_2 = new Placement(new Coordinate(0, 0), 'V');

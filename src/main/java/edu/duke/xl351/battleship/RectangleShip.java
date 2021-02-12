@@ -27,14 +27,22 @@ public class RectangleShip<T> extends BasicShip<T>{
   }
 
   // pass the needed field to the super which is basic ship
-  public RectangleShip(String name, Coordinate upperLeft, int width, int height, ShipDisplayInfo<T> myDisplayInfo) {
-    super(makeCoords(upperLeft, width, height), myDisplayInfo);
+  public RectangleShip(String name, Coordinate upperLeft, int width, int height, ShipDisplayInfo<T> myDisplayInfo,ShipDisplayInfo<T> enemyDisplayInfo) {
+    super(makeCoords(upperLeft, width, height), myDisplayInfo,enemyDisplayInfo);
     this.name = name;
   }
 
+  /* that is, we will tell the paraent constructor that for my own view display
+    data if not hit, onHit if hit
+
+   And for the enemy view, nothing if not hit, data if hit
+
+  */
   public RectangleShip(String name, Coordinate upperLeft, int width, int height, T data, T onHit) {
-    this(name, upperLeft, width, height, new SimpleShipDisplayInfo<T>(data, onHit));
+    this(name, upperLeft, width, height, new SimpleShipDisplayInfo<T>(data, onHit),
+        new SimpleShipDisplayInfo<T>(null, data));
   }
+
 
 
   public RectangleShip(Coordinate upperLeft, T data, T onHit) {
