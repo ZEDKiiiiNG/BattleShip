@@ -1,6 +1,7 @@
 package edu.duke.xl351.battleship;
 
 import java.io.BufferedReader;
+import java.io.EOFException;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.util.ArrayList;
@@ -41,6 +42,60 @@ public class TextPlayer {
     setupShipCreationList();
   }
 
+  /**
+   * @param b and the view are nemy's Board and BoardTextView
+   * this function will let the player play one turn
+   */  
+  public void playOneTurn(Board<Character> b , BoardTextView enemy_view) throws IOException{
+    out.println(view.displayMyBoardWithEnemyNextToIt(enemy_view,"Your ocean","Enemy's ocean"));
+    out.println("player "+name+" where you want to fire at?");
+    boolean valid = false;
+    while(!valid){
+      try{
+        String s = inputReader.readLine();
+        if(s == null){
+          throw new EOFException("That placement is invalid:the input is empty");
+        }
+        Coordinate c = new Coordinate(s);
+        Ship<Character> sp = b.fireAt(c);
+        if (sp != null){
+          out.println("You hit a "+sp.getName()+"!");
+        }
+        else {
+          out.println("You missed!");
+          //out.print("\n");
+        }
+        valid = true;
+        if(b.check_win()){
+          out.println("player "+name+" has won!!!");
+        }
+        
+      }
+      catch(IllegalArgumentException e){
+        out.println(e.getMessage());
+      }
+    }
+    
+  }
+
+  /** the helper function to return checkwin status
+   */  
+  public boolean check_win(){
+    return theBoard.check_win();
+  }
+
+  /** the helper function to return board
+   */
+  public Board<Character> get_Board(){
+    return theBoard;
+  }
+
+  /** the helper function to return boardview
+   */
+  public BoardTextView get_View(){
+    return view;
+  }
+  
   /**setup function for ship an ArrayList of the ship names that we want to work from.  
    *Then we want a map from ship name to the lambda to create it.
    */  
@@ -66,10 +121,10 @@ public class TextPlayer {
   public Placement readPlacement(String prompt) throws IOException {
     out.println(prompt);
     String s = inputReader.readLine();
-    /*if(s == null){
-       throw new IllegalArgumentException("That placement is invalid:the input is empty");
+    if(s == null){
+       throw new EOFException("That placement is invalid:the input is empty");
        // we will never need to throw a null, as we need a '\n' to input, so it is not concerned
-       }*/
+    }
     return new Placement(s);
   }
   

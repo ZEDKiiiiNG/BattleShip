@@ -5,9 +5,9 @@ package edu.duke.xl351.battleship;
 
 import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.io.PrintStream;
 import java.io.Reader;
-import java.io.InputStreamReader;
 
 public class App {
   final TextPlayer player1;
@@ -31,6 +31,27 @@ public class App {
     this.player2.doPlacementPhase();
   }
 
+  /*
+    this function is used to do the attacking process until one player win
+   */
+
+  public void doAttackingPhase() throws IOException{
+    boolean A_turn = true;
+    while(!this.player1.check_win() && !this.player2.check_win()){
+      if(A_turn){
+        this.player1.playOneTurn(player2.get_Board(), player2.get_View());
+        A_turn = false;
+      }
+      //if (this.player2.check_win()) {
+      //break;
+      //}
+      else {
+        this.player2.playOneTurn(player1.get_Board(), player1.get_View());
+        A_turn = true;
+      }
+      
+    }
+  }
  
   public static void main(String[] args) throws IOException{
     Board<Character> b1 = new BattleShipBoard<Character>(10, 20,'X');
@@ -43,6 +64,7 @@ public class App {
     
     //App app = new App(b,new InputStreamReader(System.in),System.out);
     app.doPlacementPhase();
+    app.doAttackingPhase();
   }
     
 }

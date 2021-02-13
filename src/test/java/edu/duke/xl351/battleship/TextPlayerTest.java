@@ -1,9 +1,11 @@
 package edu.duke.xl351.battleship;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 import java.io.BufferedReader;
 import java.io.ByteArrayOutputStream;
+import java.io.EOFException;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.PrintStream;
@@ -103,6 +105,34 @@ public class TextPlayerTest {
     bytes.reset(); //clear out bytes for next time around
   }
 
+  @Test
+   public void test_doOne_placement_throw_null() throws IOException{
+    
+    ByteArrayOutputStream bytes = new ByteArrayOutputStream();
+    TextPlayer player = createTextPlayer(3, 5, "", bytes);
+
+    String sn1 = "Destroyer";
+    Function<Placement, Ship<Character>> createFn1 = player.shipCreationFns.get(sn1);
+    assertThrows(  EOFException.class, ()->player.doOnePlacement(sn1, createFn1));
+
+    bytes.reset(); //clear out bytes for next time around
+
+    Board<Character> b4 = new BattleShipBoard<Character>(3, 5,'X');
+    BoardTextView view4 = new BoardTextView(b4);
+
+    AbstractShipFactory<Character> f = new V1ShipFactory();
+    Placement v1_2 = new Placement(new Coordinate(0, 0), 'V');
+    
+    Ship<Character> dst1 = f.makeDestroyer(v1_2);
+    
+    assertEquals(b4.tryAddShip(dst1), null);
+    
+    
+    assertThrows(  EOFException.class, ()->player.playOneTurn(b4, view4));
+
+    
+  }
+  
   @Test
    public void test_doOne_placement_throw_illegelplace() throws IOException{
     
@@ -359,9 +389,110 @@ public class TextPlayerTest {
       expectedHeader+"\n";
     assertEquals(expected1, bytes.toString());
   }
-  
+
+
+  @Test
+   public void test_playoneturn() throws IOException{
+    
+    String expectedHeader= "  0|1|2";
+    ByteArrayOutputStream bytes = new ByteArrayOutputStream();
+    TextPlayer player = createTextPlayer(3, 5, "B0V\nC0\nA1\nE11\nB0\nA0\n", bytes);
+
+    String sn1 = "Destroyer";
+    Function<Placement, Ship<Character>> createFn1 = player.shipCreationFns.get(sn1);
+    player.doOnePlacement(sn1,createFn1);
+    
+    String expected1=
+      "Player A where do you want to place a Destroyer?\n"+
+      expectedHeader+"\n"+
+      "A  | |  A\n"+
+      "B d| |  B\n"+
+      "C d| |  C\n"+
+      "D d| |  D\n"+
+      "E  | |  E\n"+
+      expectedHeader+"\n"+"\n";
+    assertEquals(expected1, bytes.toString());
+    bytes.reset(); //clear out bytes for next time around
+
+    Board<Character> b4 = new BattleShipBoard<Character>(3, 5,'X');
+    BoardTextView view4 = new BoardTextView(b4);
+
+    AbstractShipFactory<Character> f = new V1ShipFactory();
+    Placement v1_2 = new Placement(new Coordinate(0, 0), 'V');
+    
+    Ship<Character> dst1 = f.makeDestroyer(v1_2);
+    
+    assertEquals(b4.tryAddShip(dst1), null);
+    
+    player.playOneTurn(b4, view4);
+
+    String expected_both1=
+      "     Your ocean"+"             "+"Enemy's ocean\n"+
+      expectedHeader+"        "+expectedHeader+"\n"+
+      "A  | |  A"+"      "+"A  | |  A\n"+
+      "B d| |  B"+"      "+"B  | |  B\n"+
+      "C d| |  C"+"      "+"C  | |  C\n"+
+      "D d| |  D"+"      "+"D  | |  D\n"+
+      "E  | |  E"+"      "+"E  | |  E\n"+
+      expectedHeader+"        "+expectedHeader+"\n"+"\n"+
+      "player A where you want to fire at?\n"+
+      "You hit a Destroyer!\n";
+    assertEquals(expected_both1, bytes.toString());
+    bytes.reset(); //clear out bytes for next time around
+
+    player.playOneTurn(b4, view4);
+    
+    String expected_both2=
+      "     Your ocean"+"             "+"Enemy's ocean\n"+
+      expectedHeader+"        "+expectedHeader+"\n"+
+      "A  | |  A"+"      "+"A  | |  A\n"+
+      "B d| |  B"+"      "+"B  | |  B\n"+
+      "C d| |  C"+"      "+"C d| |  C\n"+
+      "D d| |  D"+"      "+"D  | |  D\n"+
+      "E  | |  E"+"      "+"E  | |  E\n"+
+      expectedHeader+"        "+expectedHeader+"\n"+"\n"+
+      "player A where you want to fire at?\n"+
+      "You missed!\n";
+    assertEquals(expected_both2, bytes.toString());
+    bytes.reset(); //clear out bytes for next time around
+
+    player.playOneTurn(b4, view4);
+    
+    String expected_both3=
+      "     Your ocean"+"             "+"Enemy's ocean\n"+
+      expectedHeader+"        "+expectedHeader+"\n"+
+      "A  | |  A"+"      "+"A  |X|  A\n"+
+      "B d| |  B"+"      "+"B  | |  B\n"+
+      "C d| |  C"+"      "+"C d| |  C\n"+
+      "D d| |  D"+"      "+"D  | |  D\n"+
+      "E  | |  E"+"      "+"E  | |  E\n"+
+      expectedHeader+"        "+expectedHeader+"\n"+"\n"+
+      "player A where you want to fire at?\n"+
+      "the length of size must be 2, but is 3\n"+
+      "You hit a Destroyer!\n";
+    assertEquals(expected_both3, bytes.toString());
+    bytes.reset(); //clear out bytes for next time around
+    
+    player.playOneTurn(b4, view4);
+     String expected_both4=
+      "     Your ocean"+"             "+"Enemy's ocean\n"+
+      expectedHeader+"        "+expectedHeader+"\n"+
+      "A  | |  A"+"      "+"A  |X|  A\n"+
+      "B d| |  B"+"      "+"B d| |  B\n"+
+      "C d| |  C"+"      "+"C d| |  C\n"+
+      "D d| |  D"+"      "+"D  | |  D\n"+
+      "E  | |  E"+"      "+"E  | |  E\n"+
+      expectedHeader+"        "+expectedHeader+"\n"+"\n"+
+      "player A where you want to fire at?\n"+
+      "You hit a Destroyer!\n"+
+       "player A has won!!!\n";
+    assertEquals(expected_both4, bytes.toString());
+    bytes.reset(); //clear out bytes for next time around
+    
+  }
 
 }
+
 
 
 
