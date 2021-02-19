@@ -151,7 +151,7 @@ public class TextPlayerTest {
     String expected3 = "Player A where do you want to place a Destroyer?\n"+"the second number  must be 0-9, but is a\n";
 
     
-    String expected4 = "Player A where do you want to place a Destroyer?\n"+"the orientation must be V or H, but is Q\n";
+    String expected4 = "Player A where do you want to place a Destroyer?\n"+"the orientation must be V, H, U, D, R or L, but is Q\n";
     
     String expected5 = "Player A where do you want to place a Destroyer?\n"+"the length of size must be 3, but is 0\n";
 
@@ -392,6 +392,231 @@ public class TextPlayerTest {
 
 
   @Test
+   public void test_playoneturnV2() throws IOException{
+    
+    String expectedHeader= "  0|1|2";
+    ByteArrayOutputStream bytes = new ByteArrayOutputStream();
+    TextPlayer player = createTextPlayer(3, 5, "B0V\nF\nC0\nF\nA1\nF\nE11\nF\nB0\n"+"M\nB0\nB5V\n"+"M\nB0\nB1V\n"+"M\nB1\nB2V\n"+"M\nB2\nB0V\n"+"M\nS\nA0\n"+"F\nA0\n", bytes);
+
+    String sn1 = "Destroyer";
+    Function<Placement, Ship<Character>> createFn1 = player.shipCreationFns.get(sn1);
+    player.doOnePlacement(sn1,createFn1);
+    
+    String expected1=
+      "Player A where do you want to place a Destroyer?\n"+
+      expectedHeader+"\n"+
+      "A  | |  A\n"+
+      "B d| |  B\n"+
+      "C d| |  C\n"+
+      "D d| |  D\n"+
+      "E  | |  E\n"+
+      expectedHeader+"\n"+"\n";
+    assertEquals(expected1, bytes.toString());
+    bytes.reset(); //clear out bytes for next time around
+
+    Board<Character> b4 = new BattleShipBoard<Character>(3, 5,'X');
+    BoardTextView view4 = new BoardTextView(b4);
+
+    AbstractShipFactory<Character> f = new V1ShipFactory();
+    Placement v1_2 = new Placement(new Coordinate(0, 0), 'V');
+    
+    Ship<Character> dst1 = f.makeDestroyer(v1_2);
+    
+    assertEquals(b4.tryAddShip(dst1), null);
+    
+    player.playOneTurnV2(b4, view4);
+
+    String expected_both1=
+      "     Your ocean"+"             "+"Enemy's ocean\n"+
+      expectedHeader+"        "+expectedHeader+"\n"+
+      "A  | |  A"+"      "+"A  | |  A\n"+
+      "B d| |  B"+"      "+"B  | |  B\n"+
+      "C d| |  C"+"      "+"C  | |  C\n"+
+      "D d| |  D"+"      "+"D  | |  D\n"+
+      "E  | |  E"+"      "+"E  | |  E\n"+
+      expectedHeader+"        "+expectedHeader+"\n"+"\n"+
+      "Possible actions for Player A:\n\n"+
+      "F Fire at a square\n"+
+      "M Move a ship to another square (3 remaining)\n"+
+      "S Sonar scan (3 remaining)\n\n"+
+      "Player A, what would you like to do?\n"+
+      "player A where you want to fire at?\n"+
+      "You hit a Destroyer!\n";
+    assertEquals(expected_both1, bytes.toString());
+    bytes.reset(); //clear out bytes for next time around
+
+    player.playOneTurnV2(b4, view4);
+    
+    String expected_both2=
+      "     Your ocean"+"             "+"Enemy's ocean\n"+
+      expectedHeader+"        "+expectedHeader+"\n"+
+      "A  | |  A"+"      "+"A  | |  A\n"+
+      "B d| |  B"+"      "+"B  | |  B\n"+
+      "C d| |  C"+"      "+"C d| |  C\n"+
+      "D d| |  D"+"      "+"D  | |  D\n"+
+      "E  | |  E"+"      "+"E  | |  E\n"+
+      expectedHeader+"        "+expectedHeader+"\n"+"\n"+
+      "Possible actions for Player A:\n\n"+
+      "F Fire at a square\n"+
+      "M Move a ship to another square (3 remaining)\n"+
+      "S Sonar scan (3 remaining)\n\n"+
+      "Player A, what would you like to do?\n"+
+      "player A where you want to fire at?\n"+
+      "You missed!\n";
+    assertEquals(expected_both2, bytes.toString());
+    bytes.reset(); //clear out bytes for next time around
+
+    player.playOneTurnV2(b4, view4);
+    
+    String expected_both3=
+      "     Your ocean"+"             "+"Enemy's ocean\n"+
+      expectedHeader+"        "+expectedHeader+"\n"+
+      "A  | |  A"+"      "+"A  |X|  A\n"+
+      "B d| |  B"+"      "+"B  | |  B\n"+
+      "C d| |  C"+"      "+"C d| |  C\n"+
+      "D d| |  D"+"      "+"D  | |  D\n"+
+      "E  | |  E"+"      "+"E  | |  E\n"+
+      expectedHeader+"        "+expectedHeader+"\n"+"\n"+
+      "Possible actions for Player A:\n\n"+
+      "F Fire at a square\n"+
+      "M Move a ship to another square (3 remaining)\n"+
+      "S Sonar scan (3 remaining)\n\n"+
+      "Player A, what would you like to do?\n"+
+      "player A where you want to fire at?\n"+
+      "the length of size must be 2, but is 3\n"+
+      "Possible actions for Player A:\n\n"+
+      "F Fire at a square\n"+
+      "M Move a ship to another square (3 remaining)\n"+
+      "S Sonar scan (3 remaining)\n\n"+
+      "Player A, what would you like to do?\n"+
+      "player A where you want to fire at?\n"+
+      "You hit a Destroyer!\n";
+    assertEquals(expected_both3, bytes.toString());
+    bytes.reset(); //clear out bytes for next time around
+
+    player.playOneTurnV2(b4, view4);
+     String expected_both5=
+      "     Your ocean"+"             "+"Enemy's ocean\n"+
+      expectedHeader+"        "+expectedHeader+"\n"+
+      "A  | |  A"+"      "+"A  |X|  A\n"+
+      "B d| |  B"+"      "+"B d| |  B\n"+
+      "C d| |  C"+"      "+"C d| |  C\n"+
+      "D d| |  D"+"      "+"D  | |  D\n"+
+      "E  | |  E"+"      "+"E  | |  E\n"+
+      expectedHeader+"        "+expectedHeader+"\n"+"\n"+
+      "Possible actions for Player A:\n\n"+
+      "F Fire at a square\n"+
+      "M Move a ship to another square (3 remaining)\n"+
+      "S Sonar scan (3 remaining)\n\n"+
+      "Player A, what would you like to do?\n"+
+      "player A which ship you want to move?\n"+
+      "player A where you want to move to?\n"+
+       "That placement is invalid: the ship goes off the right of the board.\n"+
+       "Possible actions for Player A:\n\n"+
+      "F Fire at a square\n"+
+      "M Move a ship to another square (3 remaining)\n"+
+      "S Sonar scan (3 remaining)\n\n"+
+      "Player A, what would you like to do?\n"+
+      "player A which ship you want to move?\n"+
+      "player A where you want to move to?\n";
+    assertEquals(expected_both5, bytes.toString());
+    bytes.reset(); //clear out bytes for next time around
+
+    player.playOneTurnV2(b4, view4);
+     String expected_both6=
+      "     Your ocean"+"             "+"Enemy's ocean\n"+
+      expectedHeader+"        "+expectedHeader+"\n"+
+      "A  | |  A"+"      "+"A  |X|  A\n"+
+      "B  |d|  B"+"      "+"B d| |  B\n"+
+      "C  |d|  C"+"      "+"C d| |  C\n"+
+      "D  |d|  D"+"      "+"D  | |  D\n"+
+      "E  | |  E"+"      "+"E  | |  E\n"+
+      expectedHeader+"        "+expectedHeader+"\n"+"\n"+
+      "Possible actions for Player A:\n\n"+
+      "F Fire at a square\n"+
+      "M Move a ship to another square (2 remaining)\n"+
+      "S Sonar scan (3 remaining)\n\n"+
+      "Player A, what would you like to do?\n"+
+      "player A which ship you want to move?\n"+
+      "player A where you want to move to?\n";
+    assertEquals(expected_both6, bytes.toString());
+    bytes.reset(); //clear out bytes for next time around
+
+    player.playOneTurnV2(b4, view4);
+     String expected_both7=
+      "     Your ocean"+"             "+"Enemy's ocean\n"+
+      expectedHeader+"        "+expectedHeader+"\n"+
+      "A  | |  A"+"      "+"A  |X|  A\n"+
+      "B  | |d B"+"      "+"B d| |  B\n"+
+      "C  | |d C"+"      "+"C d| |  C\n"+
+      "D  | |d D"+"      "+"D  | |  D\n"+
+      "E  | |  E"+"      "+"E  | |  E\n"+
+      expectedHeader+"        "+expectedHeader+"\n"+"\n"+
+      "Possible actions for Player A:\n\n"+
+      "F Fire at a square\n"+
+      "M Move a ship to another square (1 remaining)\n"+
+      "S Sonar scan (3 remaining)\n\n"+
+      "Player A, what would you like to do?\n"+
+      "player A which ship you want to move?\n"+
+      "player A where you want to move to?\n";
+    assertEquals(expected_both7, bytes.toString());
+    bytes.reset(); //clear out bytes for next time around
+
+    player.playOneTurnV2(b4, view4);
+    String res = "Submarines occupy 0 squares\n"+
+      "Destroyers occupy 3 squares\n"+
+      "Battleships occupy 0 squares\n"+
+      "Carriers occupy 0 square\n";
+     String expected_both8=
+       "     Your ocean"+"             "+"Enemy's ocean\n"+
+       expectedHeader+"        "+expectedHeader+"\n"+
+       "A  | |  A"+"      "+"A  |X|  A\n"+
+       "B d| |  B"+"      "+"B d| |  B\n"+
+       "C d| |  C"+"      "+"C d| |  C\n"+
+       "D d| |  D"+"      "+"D  | |  D\n"+
+       "E  | |  E"+"      "+"E  | |  E\n"+
+       expectedHeader+"        "+expectedHeader+"\n"+"\n"+
+       "Possible actions for Player A:\n\n"+
+       "F Fire at a square\n"+
+       "M Move a ship to another square (0 remaining)\n"+
+       "S Sonar scan (3 remaining)\n\n"+
+       "Player A, what would you like to do?\n"+
+       "That option is invalid:the input should be F S or M, which is M the reamaning sonar is 3 and the remaining move num is 0\n"+
+       "Possible actions for Player A:\n\n"+
+       "F Fire at a square\n"+
+       "M Move a ship to another square (0 remaining)\n"+
+       "S Sonar scan (3 remaining)\n\n"+
+       "Player A, what would you like to do?\n"+
+       "player A where you want to use sonar?\n"+
+       res;
+    assertEquals(expected_both8, bytes.toString());
+    bytes.reset(); //clear out bytes for next time around
+
+    
+    player.playOneTurnV2(b4, view4);
+     String expected_both4=
+      "     Your ocean"+"             "+"Enemy's ocean\n"+
+      expectedHeader+"        "+expectedHeader+"\n"+
+      "A  | |  A"+"      "+"A  |X|  A\n"+
+      "B d| |  B"+"      "+"B d| |  B\n"+
+      "C d| |  C"+"      "+"C d| |  C\n"+
+      "D d| |  D"+"      "+"D  | |  D\n"+
+      "E  | |  E"+"      "+"E  | |  E\n"+
+      expectedHeader+"        "+expectedHeader+"\n"+"\n"+
+      "Possible actions for Player A:\n\n"+
+      "F Fire at a square\n"+
+      "M Move a ship to another square (0 remaining)\n"+
+      "S Sonar scan (2 remaining)\n\n"+
+      "Player A, what would you like to do?\n"+
+      "player A where you want to fire at?\n"+
+      "You hit a Destroyer!\n"+
+       "player A has won!!!\n";
+    assertEquals(expected_both4, bytes.toString());
+    bytes.reset(); //clear out bytes for next time around
+    
+  }
+
+  @Test
    public void test_playoneturn() throws IOException{
     
     String expectedHeader= "  0|1|2";
@@ -469,6 +694,7 @@ public class TextPlayerTest {
       expectedHeader+"        "+expectedHeader+"\n"+"\n"+
       "player A where you want to fire at?\n"+
       "the length of size must be 2, but is 3\n"+
+      "player A where you want to fire at?\n"+
       "You hit a Destroyer!\n";
     assertEquals(expected_both3, bytes.toString());
     bytes.reset(); //clear out bytes for next time around

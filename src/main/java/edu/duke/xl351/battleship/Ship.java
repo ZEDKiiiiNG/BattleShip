@@ -65,5 +65,27 @@ public interface Ship<T> {
    */
   public Iterable<Coordinate> getCoordinates();
 
+  /**
+   * Get all of the Coordinates that this Ship occupies.
+   * @return An Iterable with the coordinates that this Ship occupies
+   */
+  public Iterable<Coordinate> getshipBody();
 
+  /**
+   * Make this ship move to the specific coordinates and direction
+   */
+  public void move(Iterable<Coordinate> where);
+  
 }
+
+
+
+
+
+
+
+
+
+
+
+

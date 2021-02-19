@@ -124,6 +124,37 @@ public class BattleShipBoardTest {
   }
 
 
+  @Test
+  public void test_check_sonar(){
+    Board<Character> b = new BattleShipBoard<Character>(10, 10,'X');
+    AbstractShipFactory<Character> f = new V2ShipFactory();
+    Placement dp = new Placement(new Coordinate(2, 1), 'V');
+    Placement sp = new Placement(new Coordinate(0, 3), 'H');
+    Placement bp = new Placement(new Coordinate(1, 4), 'L');
+    Placement cp = new Placement(new Coordinate(1, 2), 'U');
+    
+    Ship<Character> dst1 = f.makeDestroyer(dp);
+    Ship<Character> sub1 = f.makeSubmarine(sp);
+    Ship<Character> bat1 = f.makeBattleship(bp);
+    Ship<Character> car1 = f.makeCarrier(cp);
+
+    assertEquals(b.tryAddShip(dst1), null);
+    assertEquals(b.tryAddShip(sub1), null);
+    assertEquals(b.tryAddShip(bat1), null);
+    assertEquals(b.tryAddShip(car1), null);
+    
+
+     String res = "Submarines occupy 1 squares\n"+
+      "Destroyers occupy 3 squares\n"+
+      "Battleships occupy 3 squares\n"+
+      "Carriers occupy 6 square\n";
+    
+   
+    
+     assertEquals(b.sonarScan(new Coordinate(3,3)), res);
+    
+  }
+
 }
 
 

@@ -15,8 +15,17 @@ public interface Board<T>{
   public Ship<T> fireAt(Coordinate c);
 
   public boolean check_win();
+
+  public Ship<T> selectShip(Coordinate c);
+
+  public String moveShip(Coordinate c,Placement p);
+
+  public String sonarScan(Coordinate c);
   
 }
+
+
+
 
 
 

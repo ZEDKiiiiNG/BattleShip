@@ -1,6 +1,7 @@
 package edu.duke.xl351.battleship;
 
 import java.util.HashSet;
+import java.util.LinkedHashSet;
 
 public class RectangleShip<T> extends BasicShip<T>{
   /** The HashSet is usded to judge the shape of ship
@@ -11,8 +12,9 @@ public class RectangleShip<T> extends BasicShip<T>{
   //private HashSet<Coordinate> myPecies;
   final String name;
   
-  static HashSet<Coordinate> makeCoords(Coordinate upperLeft, int width, int height){
-    HashSet<Coordinate> h1 = new HashSet<Coordinate>();
+  static LinkedHashSet<Coordinate> makeCoords(Coordinate upperLeft, int width, int height){
+    LinkedHashSet<Coordinate> h1 = new LinkedHashSet<Coordinate>();
+    
     for(int i = upperLeft.getRow(); i <upperLeft.getRow()+ height; i++ ){
       for(int j = upperLeft.getColumn();j <  upperLeft.getColumn()+ width; j++ ){
         Coordinate c = new Coordinate(i, j);
@@ -30,7 +32,7 @@ public class RectangleShip<T> extends BasicShip<T>{
   public RectangleShip(String name, Coordinate upperLeft, int width, int height, ShipDisplayInfo<T> myDisplayInfo,ShipDisplayInfo<T> enemyDisplayInfo) {
     super(makeCoords(upperLeft, width, height), myDisplayInfo,enemyDisplayInfo);
     this.name = name;
-  }
+  }                                        
 
   /* that is, we will tell the paraent constructor that for my own view display
     data if not hit, onHit if hit
@@ -49,7 +51,6 @@ public class RectangleShip<T> extends BasicShip<T>{
     this("testship", upperLeft, 1, 1, data, onHit);
   }
 
-  
 
 }
 

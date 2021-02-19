@@ -45,8 +45,8 @@ public class Placement {
     String w = descr.substring(0,2);
     where = new Coordinate(w);
     char ori = descr.toUpperCase().charAt(2);
-    if (ori != 'V' && ori != 'H'){
-      throw new IllegalArgumentException("the orientation must be V or H, but is "+ori);
+    if (ori != 'V' && ori != 'H' && ori != 'U' && ori != 'R' && ori != 'D' && ori != 'L'){
+      throw new IllegalArgumentException("the orientation must be V, H, U, D, R or L, but is "+ori);
     }
     orientation = ori;
     

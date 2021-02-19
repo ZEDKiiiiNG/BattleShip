@@ -9,6 +9,7 @@ import java.io.InputStreamReader;
 import java.io.PrintStream;
 import java.io.Reader;
 
+
 public class App {
   final TextPlayer player1;
   final TextPlayer player2;
@@ -39,14 +40,14 @@ public class App {
     boolean A_turn = true;
     while(!this.player1.check_win() && !this.player2.check_win()){
       if(A_turn){
-        this.player1.playOneTurn(player2.get_Board(), player2.get_View());
+        this.player1.playOneTurnV2(player2.get_Board(), player2.get_View());
         A_turn = false;
       }
       //if (this.player2.check_win()) {
       //break;
       //}
       else {
-        this.player2.playOneTurn(player1.get_Board(), player1.get_View());
+        this.player2.playOneTurnV2(player1.get_Board(), player1.get_View());
         A_turn = true;
       }
       
@@ -57,9 +58,9 @@ public class App {
     Board<Character> b1 = new BattleShipBoard<Character>(10, 20,'X');
     Board<Character> b2 = new BattleShipBoard<Character>(10, 20,'X');
     BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
-    V1ShipFactory factory = new V1ShipFactory();
-    TextPlayer p1 = new TextPlayer("A", b1, input, System.out, factory);
-    TextPlayer p2 = new TextPlayer("B", b2, input, System.out, factory);
+    V2ShipFactory factory = new V2ShipFactory();
+    TextPlayer p1 = new TextPlayer("A", b1, input, System.out, factory, true);
+    TextPlayer p2 = new TextPlayer("B", b2, input, System.out, factory, true);
     App app = new App(p1, p2);
     
     //App app = new App(b,new InputStreamReader(System.in),System.out);

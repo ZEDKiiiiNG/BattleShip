@@ -12,8 +12,8 @@ public class RectangleShipTest {
   @Test
   public void test_makeCoords() {
     Coordinate c1 = new Coordinate(1,2);
-    Coordinate c2 = new Coordinate(2,2);
-    Coordinate c3 = new Coordinate(1,3);
+    Coordinate c2 = new Coordinate(1,3);
+    Coordinate c3 = new Coordinate(2,2);
     Coordinate c4 = new Coordinate(2,3);
     //Coordinate c5 = new Coordinate(2,4);
     

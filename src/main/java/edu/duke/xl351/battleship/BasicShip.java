@@ -1,6 +1,7 @@
 package edu.duke.xl351.battleship;
 
 import java.util.HashMap;
+import java.util.Iterator;
 
 //public class BasicShip implements Ship<Character>{
 public abstract class BasicShip<T> implements Ship<T> {
@@ -8,6 +9,7 @@ public abstract class BasicShip<T> implements Ship<T> {
   protected HashMap<Coordinate, Boolean> myPieces;
   protected ShipDisplayInfo<T> myDisplayInfo;
   protected ShipDisplayInfo<T> enemyDisplayInfo;
+  protected Iterable<Coordinate> shipBody; 
   
 
   public BasicShip(Iterable<Coordinate> where, ShipDisplayInfo<T> myDisplayInfo,ShipDisplayInfo<T> enemyDisplayInfo){
@@ -17,6 +19,7 @@ public abstract class BasicShip<T> implements Ship<T> {
     for (Coordinate c : where){
       myPieces.put(c, false);
     }
+    this.shipBody = where;
   }
   
   /**
@@ -82,7 +85,28 @@ public abstract class BasicShip<T> implements Ship<T> {
     
   }
 
+  @Override
+  public Iterable<Coordinate> getshipBody(){
+    return shipBody;
+    
+  }
+
+  @Override
+  public void move(Iterable<Coordinate> where){
+    HashMap<Coordinate, Boolean> myPieces_new = new HashMap<Coordinate, Boolean>();
+    Iterator<Coordinate> c1 = where.iterator();
+    Iterator<Coordinate> c2 = shipBody.iterator();
+    while(c1.hasNext() && c2.hasNext()){
+        myPieces_new.put(c1.next(), this.myPieces.get(c2.next()));
+    }
+    this.myPieces = myPieces_new;
+    this.shipBody = where;
+  }
+  
 }
+
+
+
 
 
 
