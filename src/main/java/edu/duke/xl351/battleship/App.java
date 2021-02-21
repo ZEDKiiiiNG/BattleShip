@@ -61,6 +61,8 @@ public class App {
     V2ShipFactory factory = new V2ShipFactory();
     TextPlayer p1 = new TextPlayer("A", b1, input, System.out, factory, true);
     TextPlayer p2 = new TextPlayer("B", b2, input, System.out, factory, true);
+    p1.checkplayer();
+    p2.checkplayer();
     App app = new App(p1, p2);
     
     //App app = new App(b,new InputStreamReader(System.in),System.out);

@@ -1,3 +1,5 @@
+player A is Human or Computer (H or C)
+player B is Human or Computer (H or C)
 That placement is invalid: the ship goes off the right of the board.
 That placement is invalid: the ship goes off the bottom of the board.
 That placement is invalid: the ship overlaps another ship.

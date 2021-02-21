@@ -61,13 +61,11 @@ public class TextPlayer {
       try {
         out.println("player " + name + " is Human or Computer (H or C)");
         String s = readhelp();
-        if(s.equals("H")){
+        if(s.equals() "H"){
           this.Ai = false;
-          valid = true;
         }
-        else if (s.equals("C")){
+        else if (s == "C"){
           this.Ai = true;
-          valid = true;
         }
         else{
           throw new IllegalArgumentException("That option is invalid:the input is not C or H but is "+s);

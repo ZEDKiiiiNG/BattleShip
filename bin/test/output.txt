@@ -1,3 +1,5 @@
+player A is Human or Computer (H or C)
+player B is Human or Computer (H or C)
 That placement is invalid: the ship goes off the right of the board.
 That placement is invalid: the ship goes off the bottom of the board.
 That placement is invalid: the ship overlaps another ship.
@@ -50,3 +52,2141 @@ Player Amissed!
 Player Bmissed!
 Player A used a special action
 Player B used a special action
+No ships contains coordinate (8, 1)
+Player Amissed!
+No ships contains coordinate (8, 1)
+Player Bmissed!
+No ships contains coordinate (15, 2)
+No ships contains coordinate (14, 2)
+No ships contains coordinate (17, 1)
+Player Amissed!
+No ships contains coordinate (15, 2)
+No ships contains coordinate (14, 2)
+No ships contains coordinate (17, 1)
+Player Bmissed!
+No ships contains coordinate (17, 9)
+No ships contains coordinate (17, 9)
+Player Amissed!
+No ships contains coordinate (17, 9)
+No ships contains coordinate (17, 9)
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+No ships contains coordinate (8, 2)
+Player Amissed!
+No ships contains coordinate (8, 2)
+Player Bmissed!
+Player A hit your Destroyerat (9, 5)!
+Player B hit your Destroyerat (9, 5)!
+No ships contains coordinate (0, 0)
+Player Amissed!
+No ships contains coordinate (0, 0)
+Player Bmissed!
+No ships contains coordinate (8, 9)
+Player Amissed!
+No ships contains coordinate (8, 9)
+Player Bmissed!
+No ships contains coordinate (18, 3)
+No ships contains coordinate (12, 1)
+Player Amissed!
+No ships contains coordinate (18, 3)
+No ships contains coordinate (12, 1)
+Player Bmissed!
+Player A used a special action
+Player B used a special action
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (11, 6)!
+Player B hit your Destroyerat (11, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (14, 9)!
+Player B hit your Carrierat (14, 9)!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (10, 6)!
+Player B hit your Destroyerat (10, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (4, 6)!
+Player B hit your Battleshipat (4, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (2, 6)!
+Player B hit your Destroyerat (2, 6)!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (18, 8)!
+Player B hit your Battleshipat (18, 8)!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (5, 5)!
+Player B hit your Battleshipat (5, 5)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (11, 6)!
+Player B hit your Destroyerat (11, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (9, 4)!
+Player B hit your Destroyerat (9, 4)!
+Player A hit your Carrierat (13, 7)!
+Player B hit your Carrierat (13, 7)!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (5, 5)!
+Player B hit your Battleshipat (5, 5)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (13, 4)!
+Player B hit your Carrierat (13, 4)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (13, 4)!
+Player B hit your Carrierat (13, 4)!
+Player A hit your Carrierat (14, 9)!
+Player B hit your Carrierat (14, 9)!
+Player A hit your Destroyerat (9, 4)!
+Player B hit your Destroyerat (9, 4)!
+Player A hit your Battleshipat (4, 6)!
+Player B hit your Battleshipat (4, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (9, 4)!
+Player B hit your Destroyerat (9, 4)!
+Player A hit your Battleshipat (5, 5)!
+Player B hit your Battleshipat (5, 5)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (14, 7)!
+Player B hit your Carrierat (14, 7)!
+Player A hit your Destroyerat (2, 5)!
+Player B hit your Destroyerat (2, 5)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (5, 4)!
+Player B hit your Battleshipat (5, 4)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (12, 6)!
+Player B hit your Destroyerat (12, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (5, 4)!
+Player B hit your Battleshipat (5, 4)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (18, 7)!
+Player B hit your Battleshipat (18, 7)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (3, 6)!
+Player B hit your Battleshipat (3, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (16, 3)!
+Player B hit your Carrierat (16, 3)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (15, 3)!
+Player B hit your Carrierat (15, 3)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (10, 6)!
+Player B hit your Destroyerat (10, 6)!
+Player A hit your Destroyerat (10, 6)!
+Player B hit your Destroyerat (10, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (13, 5)!
+Player B hit your Carrierat (13, 5)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (4, 6)!
+Player B hit your Battleshipat (4, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (14, 8)!
+Player B hit your Carrierat (14, 8)!
+Player A hit your Destroyerat (10, 6)!
+Player B hit your Destroyerat (10, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (16, 3)!
+Player B hit your Carrierat (16, 3)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (3, 6)!
+Player B hit your Battleshipat (3, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (6, 5)!
+Player B hit your Battleshipat (6, 5)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (5, 6)!
+Player B hit your Battleshipat (5, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (12, 6)!
+Player B hit your Destroyerat (12, 6)!
+Player A hit your Carrierat (13, 7)!
+Player B hit your Carrierat (13, 7)!
+Player A hit your Destroyerat (12, 6)!
+Player B hit your Destroyerat (12, 6)!
+Player A hit your Submarineat (7, 2)!
+Player B hit your Submarineat (7, 2)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (12, 6)!
+Player B hit your Destroyerat (12, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (18, 8)!
+Player B hit your Battleshipat (18, 8)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (18, 7)!
+Player B hit your Battleshipat (18, 7)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (9, 4)!
+Player B hit your Destroyerat (9, 4)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (4, 6)!
+Player B hit your Battleshipat (4, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (5, 6)!
+Player B hit your Battleshipat (5, 6)!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (6, 5)!
+Player B hit your Battleshipat (6, 5)!
+Player Amissed!
+Player Bmissed!
+Player A hit your Submarineat (16, 6)!
+Player B hit your Submarineat (16, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (14, 8)!
+Player B hit your Carrierat (14, 8)!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (9, 3)!
+Player B hit your Destroyerat (9, 3)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Submarineat (7, 2)!
+Player B hit your Submarineat (7, 2)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (13, 7)!
+Player B hit your Carrierat (13, 7)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Submarineat (16, 6)!
+Player B hit your Submarineat (16, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (4, 6)!
+Player B hit your Battleshipat (4, 6)!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (2, 4)!
+Player B hit your Destroyerat (2, 4)!
+Player A hit your Carrierat (14, 7)!
+Player B hit your Carrierat (14, 7)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (9, 3)!
+Player B hit your Destroyerat (9, 3)!
+Player Amissed!
+Player Bmissed!
+Player A hit your Submarineat (7, 2)!
+Player B hit your Submarineat (7, 2)!
+Player A hit your Carrierat (13, 7)!
+Player B hit your Carrierat (13, 7)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (2, 6)!
+Player B hit your Destroyerat (2, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (5, 5)!
+Player B hit your Battleshipat (5, 5)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (5, 6)!
+Player B hit your Battleshipat (5, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (9, 3)!
+Player B hit your Destroyerat (9, 3)!
+Player A hit your Carrierat (12, 4)!
+Player B hit your Carrierat (12, 4)!
+Player A hit your Destroyerat (10, 6)!
+Player B hit your Destroyerat (10, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (13, 7)!
+Player B hit your Carrierat (13, 7)!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (14, 7)!
+Player B hit your Carrierat (14, 7)!
+Player A hit your Carrierat (14, 3)!
+Player B hit your Carrierat (14, 3)!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (14, 9)!
+Player B hit your Carrierat (14, 9)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (10, 6)!
+Player B hit your Destroyerat (10, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (11, 6)!
+Player B hit your Destroyerat (11, 6)!
+Player A hit your Battleshipat (4, 5)!
+Player B hit your Battleshipat (4, 5)!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (4, 6)!
+Player B hit your Battleshipat (4, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Submarineat (8, 2)!
+Player B hit your Submarineat (8, 2)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (13, 4)!
+Player B hit your Carrierat (13, 4)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (13, 4)!
+Player B hit your Carrierat (13, 4)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (18, 7)!
+Player B hit your Battleshipat (18, 7)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (19, 7)!
+Player B hit your Battleshipat (19, 7)!
+Player A hit your Destroyerat (9, 5)!
+Player B hit your Destroyerat (9, 5)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (15, 3)!
+Player B hit your Carrierat (15, 3)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (13, 5)!
+Player B hit your Carrierat (13, 5)!
+Player A hit your Carrierat (13, 7)!
+Player B hit your Carrierat (13, 7)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (6, 5)!
+Player B hit your Battleshipat (6, 5)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (5, 6)!
+Player B hit your Battleshipat (5, 6)!
+Player A hit your Battleshipat (3, 6)!
+Player B hit your Battleshipat (3, 6)!
+Player A hit your Submarineat (7, 2)!
+Player B hit your Submarineat (7, 2)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (14, 7)!
+Player B hit your Carrierat (14, 7)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (3, 6)!
+Player B hit your Battleshipat (3, 6)!
+Player A hit your Battleshipat (4, 7)!
+Player B hit your Battleshipat (4, 7)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (12, 6)!
+Player B hit your Destroyerat (12, 6)!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (16, 3)!
+Player B hit your Carrierat (16, 3)!
+Player A hit your Carrierat (13, 6)!
+Player B hit your Carrierat (13, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (5, 6)!
+Player B hit your Battleshipat (5, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (2, 4)!
+Player B hit your Destroyerat (2, 4)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (5, 5)!
+Player B hit your Battleshipat (5, 5)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (14, 9)!
+Player B hit your Carrierat (14, 9)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (2, 4)!
+Player B hit your Destroyerat (2, 4)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Submarineat (16, 6)!
+Player B hit your Submarineat (16, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (5, 6)!
+Player B hit your Battleshipat (5, 6)!
+Player A hit your Carrierat (15, 3)!
+Player B hit your Carrierat (15, 3)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (14, 8)!
+Player B hit your Carrierat (14, 8)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (9, 3)!
+Player B hit your Destroyerat (9, 3)!
+Player A hit your Destroyerat (2, 6)!
+Player B hit your Destroyerat (2, 6)!
+Player Amissed!
+Player Bmissed!
+Player A hit your Submarineat (7, 2)!
+Player B hit your Submarineat (7, 2)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (5, 6)!
+Player B hit your Battleshipat (5, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (14, 4)!
+Player B hit your Carrierat (14, 4)!
+Player A hit your Destroyerat (9, 4)!
+Player B hit your Destroyerat (9, 4)!
+Player Amissed!
+Player Bmissed!
+Player A hit your Submarineat (16, 7)!
+Player B hit your Submarineat (16, 7)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (13, 4)!
+Player B hit your Carrierat (13, 4)!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (9, 3)!
+Player B hit your Destroyerat (9, 3)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Submarineat (8, 2)!
+Player B hit your Submarineat (8, 2)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (9, 5)!
+Player B hit your Destroyerat (9, 5)!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (12, 4)!
+Player B hit your Carrierat (12, 4)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (18, 8)!
+Player B hit your Battleshipat (18, 8)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (12, 4)!
+Player B hit your Carrierat (12, 4)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (12, 6)!
+Player B hit your Destroyerat (12, 6)!
+Player A hit your Destroyerat (9, 5)!
+Player B hit your Destroyerat (9, 5)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (12, 6)!
+Player B hit your Destroyerat (12, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (18, 7)!
+Player B hit your Battleshipat (18, 7)!
+Player A hit your Battleshipat (4, 6)!
+Player B hit your Battleshipat (4, 6)!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (9, 4)!
+Player B hit your Destroyerat (9, 4)!
+Player A hit your Battleshipat (6, 5)!
+Player B hit your Battleshipat (6, 5)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (5, 5)!
+Player B hit your Battleshipat (5, 5)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (4, 5)!
+Player B hit your Battleshipat (4, 5)!
+Player A hit your Carrierat (14, 4)!
+Player B hit your Carrierat (14, 4)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (12, 6)!
+Player B hit your Destroyerat (12, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (5, 5)!
+Player B hit your Battleshipat (5, 5)!
+Player A hit your Carrierat (14, 8)!
+Player B hit your Carrierat (14, 8)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (2, 4)!
+Player B hit your Destroyerat (2, 4)!
+Player Amissed!
+Player Bmissed!
+Player A hit your Submarineat (7, 2)!
+Player B hit your Submarineat (7, 2)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (14, 7)!
+Player B hit your Carrierat (14, 7)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (11, 6)!
+Player B hit your Destroyerat (11, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (18, 8)!
+Player B hit your Battleshipat (18, 8)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (13, 5)!
+Player B hit your Carrierat (13, 5)!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (18, 7)!
+Player B hit your Battleshipat (18, 7)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (18, 7)!
+Player B hit your Battleshipat (18, 7)!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (13, 4)!
+Player B hit your Carrierat (13, 4)!
+Player A hit your Destroyerat (9, 4)!
+Player B hit your Destroyerat (9, 4)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (6, 5)!
+Player B hit your Battleshipat (6, 5)!
+Player A hit your Destroyerat (9, 3)!
+Player B hit your Destroyerat (9, 3)!
+Player A hit your Destroyerat (12, 6)!
+Player B hit your Destroyerat (12, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (18, 8)!
+Player B hit your Battleshipat (18, 8)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (5, 5)!
+Player B hit your Battleshipat (5, 5)!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (4, 6)!
+Player B hit your Battleshipat (4, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (4, 7)!
+Player B hit your Battleshipat (4, 7)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (14, 4)!
+Player B hit your Carrierat (14, 4)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (9, 5)!
+Player B hit your Destroyerat (9, 5)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (10, 6)!
+Player B hit your Destroyerat (10, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (14, 4)!
+Player B hit your Carrierat (14, 4)!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (5, 6)!
+Player B hit your Battleshipat (5, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (14, 9)!
+Player B hit your Carrierat (14, 9)!
+Player A hit your Destroyerat (9, 5)!
+Player B hit your Destroyerat (9, 5)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (6, 5)!
+Player B hit your Battleshipat (6, 5)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (3, 6)!
+Player B hit your Battleshipat (3, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (9, 5)!
+Player B hit your Destroyerat (9, 5)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (12, 4)!
+Player B hit your Carrierat (12, 4)!
+Player A hit your Carrierat (15, 3)!
+Player B hit your Carrierat (15, 3)!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (5, 4)!
+Player B hit your Battleshipat (5, 4)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Submarineat (16, 6)!
+Player B hit your Submarineat (16, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (14, 7)!
+Player B hit your Carrierat (14, 7)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (3, 6)!
+Player B hit your Battleshipat (3, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (14, 3)!
+Player B hit your Carrierat (14, 3)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (13, 5)!
+Player B hit your Carrierat (13, 5)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (11, 6)!
+Player B hit your Destroyerat (11, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (12, 4)!
+Player B hit your Carrierat (12, 4)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (13, 6)!
+Player B hit your Carrierat (13, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (13, 7)!
+Player B hit your Carrierat (13, 7)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (9, 5)!
+Player B hit your Destroyerat (9, 5)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (14, 3)!
+Player B hit your Carrierat (14, 3)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Submarineat (16, 6)!
+Player B hit your Submarineat (16, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (2, 6)!
+Player B hit your Destroyerat (2, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (14, 8)!
+Player B hit your Carrierat (14, 8)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (9, 4)!
+Player B hit your Destroyerat (9, 4)!
+Player A hit your Destroyerat (12, 6)!
+Player B hit your Destroyerat (12, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (11, 6)!
+Player B hit your Destroyerat (11, 6)!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (15, 3)!
+Player B hit your Carrierat (15, 3)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (18, 7)!
+Player B hit your Battleshipat (18, 7)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (18, 7)!
+Player B hit your Battleshipat (18, 7)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (13, 5)!
+Player B hit your Carrierat (13, 5)!
+Player A hit your Destroyerat (11, 6)!
+Player B hit your Destroyerat (11, 6)!
+Player A hit your Carrierat (15, 3)!
+Player B hit your Carrierat (15, 3)!
+Player A hit your Battleshipat (5, 6)!
+Player B hit your Battleshipat (5, 6)!
+Player A hit your Carrierat (16, 3)!
+Player B hit your Carrierat (16, 3)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (4, 5)!
+Player B hit your Battleshipat (4, 5)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (5, 4)!
+Player B hit your Battleshipat (5, 4)!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (2, 6)!
+Player B hit your Destroyerat (2, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (3, 6)!
+Player B hit your Battleshipat (3, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (11, 6)!
+Player B hit your Destroyerat (11, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (2, 6)!
+Player B hit your Destroyerat (2, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (10, 6)!
+Player B hit your Destroyerat (10, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (2, 6)!
+Player B hit your Destroyerat (2, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Submarineat (7, 2)!
+Player B hit your Submarineat (7, 2)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (13, 7)!
+Player B hit your Carrierat (13, 7)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (2, 5)!
+Player B hit your Destroyerat (2, 5)!
+Player A hit your Carrierat (13, 5)!
+Player B hit your Carrierat (13, 5)!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (13, 4)!
+Player B hit your Carrierat (13, 4)!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (2, 6)!
+Player B hit your Destroyerat (2, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (4, 5)!
+Player B hit your Battleshipat (4, 5)!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (9, 3)!
+Player B hit your Destroyerat (9, 3)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (5, 5)!
+Player B hit your Battleshipat (5, 5)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (14, 9)!
+Player B hit your Carrierat (14, 9)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (5, 4)!
+Player B hit your Battleshipat (5, 4)!
+Player A hit your Battleshipat (5, 6)!
+Player B hit your Battleshipat (5, 6)!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (14, 9)!
+Player B hit your Carrierat (14, 9)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (12, 6)!
+Player B hit your Destroyerat (12, 6)!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (4, 7)!
+Player B hit your Battleshipat (4, 7)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (5, 6)!
+Player B hit your Battleshipat (5, 6)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Destroyerat (9, 3)!
+Player B hit your Destroyerat (9, 3)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Carrierat (15, 3)!
+Player B hit your Carrierat (15, 3)!
+Player Amissed!
+Player Bmissed!
+Player Amissed!
+Player Bmissed!
+Player A hit your Battleshipat (17, 7)!
+player A has won!!!
